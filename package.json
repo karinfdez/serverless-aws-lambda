@@ -1,5 +1,7 @@
 {
-  "scripts":{
+  "name":"aws-lambda-first",
+  "type": "module",
+"scripts":{
     "dev": "sls offline start"
   },
   "devDependencies": {
