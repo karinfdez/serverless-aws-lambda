@@ -16,7 +16,6 @@ functions:
       - httpApi:
           path: /api
           method: get
-          cors: true
   hello:
     handler: handler.hello
     events:
@@ -32,14 +31,11 @@ functions:
 
   todo:
     handler: src/api/todo.handler
+    
     events:
       - httpApi:
           path: /todo/{id}
           method: get
-          request:
-            parameters:
-              paths:
-                id: true
   
 plugins:
   - serverless-offline
