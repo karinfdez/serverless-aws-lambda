@@ -1,10 +1,14 @@
 {
-  "name":"aws-lambda-first",
+  "name": "aws-lambda-first",
   "type": "module",
-"scripts":{
+  "scripts": {
     "dev": "sls offline start"
   },
   "devDependencies": {
     "serverless-offline": "^14.4.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "serverless-http": "^3.2.0"
   }
 }

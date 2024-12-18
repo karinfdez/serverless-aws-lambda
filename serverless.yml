@@ -14,28 +14,29 @@ functions:
     handler: src/api/api.handler
     events:
       - httpApi:
-          path: /api
-          method: get
-  hello:
-    handler: handler.hello
-    events:
-      - httpApi:
-          path: /
-          method: get
-  todos:
-    handler: src/api/todos.handler
-    events:
-      - httpApi:
-          path: /todos
-          method: get
+          path: /{proxy+}  # Catch-all route for HTTP APIs
+          method: ANY
+  
+  # hello:
+  #   handler: handler.hello
+  #   events:
+  #     - httpApi:
+  #         path: /
+  #         method: get
+  # todos:
+  #   handler: src/api/todos.handler
+  #   events:
+  #     - httpApi:
+  #         path: /todos
+  #         method: get
 
-  todo:
-    handler: src/api/todo.handler
-    
-    events:
-      - httpApi:
-          path: /todo/{id}
-          method: get
+  # todo:
+  #   handler: src/api/todo.handler
+
+  #   events:
+  #     - httpApi:
+  #         path: /todo/{id}
+  #         method: get
   
 plugins:
   - serverless-offline
