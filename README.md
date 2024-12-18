@@ -75,6 +75,5 @@ By following these steps, your local project environment will be fully prepared 
 ## What I Learned
 - API Gateway Configuration
 - Configuring Lambda functions
-- Deploying serverless applications
-- Routing Serverless with Express
-- Integration with other AWS services.
+- Deploying serverless applications through the Serverless framework
+- Routing Serverless with Express: Learned to configure Express applications on AWS Lambda using serverless-http module, allowing for traditional web server functionality within a serverless architecture.
