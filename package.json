@@ -2,7 +2,8 @@
   "name": "aws-lambda-first",
   "type": "module",
   "scripts": {
-    "dev": "sls offline start"
+    "dev": "sls offline start",
+    "deploy": "sls deploy"
   },
   "devDependencies": {
     "serverless-offline": "^14.4.0"

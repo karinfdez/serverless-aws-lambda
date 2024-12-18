@@ -2,7 +2,7 @@
 # Serverless AWS Lambda Project
 
 ## Introduction
-This repository contains the project I developed form scratch while taking the "Serverless with AWS Lambda" course. The project showcases various AWS Lambda functions, deployment strategies, and serverless application models that I learned through the course.
+This repository hosts a project I developed from scratch while taking the 'Serverless with AWS Lambda' course. It illustrates the configuration of the API Gateway using the Serverless platform, which proxies to a Lambda function. This Lambda function in turn proxies requests to Express, which handles route determination.
 
 ## Course Overview
 The course covered a comprehensive range of topics essential for understanding and implementing serverless architectures with AWS Lambda. Here’s a brief overview of what I learned:
@@ -47,6 +47,16 @@ cd your-repository-name
 npm install
 ```
 
+### Run locally
+```bash
+npm run dev
+```
+
+### To deploy the entire project
+```bash
+npm deploy
+```
+
 ### Configure AWS Credentials using Serverless
 This project uses the Serverless Framework to manage and deploy AWS Lambda functions. To configure AWS credentials:
 
@@ -63,6 +73,8 @@ This project uses the Serverless Framework to manage and deploy AWS Lambda funct
 By following these steps, your local project environment will be fully prepared to work with AWS via the Serverless Framework, streamlining the deployment and management of serverless functions.
 
 ## What I Learned
+- API Gateway Configuration
 - Configuring Lambda functions
 - Deploying serverless applications
+- Routing Serverless with Express
 - Integration with other AWS services.
